@@ -1,46 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>You've encountered an error</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&family=Ubuntu+Mono&display=swap');
-        p.title {
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            font-weight: bold;
-            color: red;
-            font-size: 32pt;
-            margin-top: 8pt;
-            margin-bottom: 16pt;
-        }
-        
-        p.main {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 16pt;
-            color: white;
-            text-align: center;
-        }
-        
-        span.mono {
-            font-family: 'Ubuntu Mono', monospace;
-            font-size: 16pt;
-            color: white;
-        }
-    </style>
-</head>
-
-<body bgcolor="#101820">
-    <p class="title">
-        <img src="assets/morpheus_meme.jpg" />
-    </p>
-    <p class="title">
-        HTTP 404: Sorry, that didn't go well.
-    </p>
-    <p class="main">
-        You are trying to visit a page that doesn't exist on our site&nbsp; <span class="mono">pie.dc.sidlibrary.org.</span>
-        <br /> If you're goofying around with random URI, please gently leave without doing anything malicious.
-    </p>
-</body>
-
+  <head>
+    <title>You&apos;ve encountered an error</title>
+    <meta name="description" content="You've encountered an error" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="assets/style.css" />
+    <link type="image/x-icon" rel="icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <main class="main">
+      <hr />
+      <div class="main_header">
+        <h1 class="header_title">
+          <a href="#">HTTP 404: Sorry, that didn&apos;t go well.</a>
+        </h1>
+        <div class="main_image">
+          <img src="assets/morpheus_meme.jpg" />
+        </div>
+      </div>
+      <div class="main_inner">
+        <p>
+          You&apos;re trying to visit a page that doesn&apos;t exist in our website <code>sidlibrary.org</code>.
+        </p>
+        <p>
+          If you are goofying around with random URI, please gently leave without doing anything malicious.
+        </p>
+      </div>
+      <hr />
+    </main>
+  </body>
 </html>
